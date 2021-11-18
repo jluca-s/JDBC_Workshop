@@ -19,9 +19,19 @@ public class Program2 {
 		System.out.println(department);
 		System.out.println("Insert completed!");
 		
-		System.out.println("=== TEST 2: Department update ===");
+		System.out.println("\n=== TEST 2: Department update ===");
 		department.setName("SmartPhones");
 		departmentDao.update(department);
+		System.out.println("Update completed");
+		
+		System.out.println("\n=== TEST 3: Department deleteById ===");
+		int id = sc.nextInt();
+		departmentDao.deleteById(id);
+		System.out.println("Delete completed");
+		
+		
+		
+		
 		
 		
 
