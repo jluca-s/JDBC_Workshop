@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
-import model.dao.impl.DepartmentDaoJDBC;
 import model.entities.Department;
 
 public class Program2 {
@@ -42,14 +41,6 @@ public class Program2 {
 		for (Department d : departments) {
 			System.out.println(d);
 		}
-		
-		
-		
-		
-		
-		
-		
-
 		
 		
 		sc.close();
