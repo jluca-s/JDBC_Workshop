@@ -1,9 +1,12 @@
 package application;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
+import model.dao.impl.DepartmentDaoJDBC;
 import model.entities.Department;
 
 public class Program2 {
@@ -32,6 +35,13 @@ public class Program2 {
 		System.out.println("\n=== TEST 4: Department findById ===");
 		department = departmentDao.findById(2);
 		System.out.println(department);
+		
+		System.out.println("\n=== TEST 5: Department findAll ===");
+		List<Department> departments = new ArrayList<>();
+		departments = departmentDao.findAll();
+		for (Department d : departments) {
+			System.out.println(d);
+		}
 		
 		
 		
