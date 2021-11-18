@@ -127,11 +127,11 @@ public class SellerDaoJDBC implements SellerDao {
 			st.setInt(1, id);
 			rs = st.executeQuery();
 			if (rs.next()) {
-			Department dep = instanciateDepartment(rs);
+				Department dep = instanciateDepartment(rs);
 			
-			Seller seller = instanciateSeller(rs, dep);
+				Seller seller = instanciateSeller(rs, dep);
 			
-			return seller;
+				return seller;
 			}
 			return null;
 		}
